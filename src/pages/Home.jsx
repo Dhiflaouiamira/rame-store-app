@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './home.css'; // Make sure this file is imported for styling
 import { FaInstagram } from 'react-icons/fa'; // Import the Instagram icon from React Icons
+import Navbar from '../components/Navbar/Navbar';
 
 function Home() {
   const [email, setEmail] = useState('');
@@ -36,27 +37,6 @@ function Home() {
 
   return (
     <div>
-      {/* Navigation */}
-      <header>
-        <nav className="navbar">
-          <div className="navbar-left">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Gear</a></li>
-              <li><a href="#">Records</a></li>
-              <li><a href="#">Merch</a></li>
-            </ul>
-          </div>
-          <div className="navbar-right">
-            <ul>
-              <li><a href="#">Contacts</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">FAQ</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-
       {/* Logo Section */}
       <div className="logo-container">
         <img src="images/ramelogo.jpg" alt="Rame Store Logo" className="logo-img" />
@@ -76,7 +56,7 @@ function Home() {
         {/* Coming Soon Sections */}
         <section className="coming-soon">
           <div className="grid-item">Records<br /><span>Coming soon...</span></div>
-          <div className="grid-item">Digital<br /><span>Coming soon...</span></div>
+          <div className="grid-item">Digital<br /></div>
           <div className="grid-item">Gear<br /><span>Coming soon...</span></div>
           <div className="grid-item">Merch<br /><span>Coming soon...</span></div>
         </section>
